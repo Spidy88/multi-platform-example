@@ -1,0 +1,31 @@
+{
+  "name": "@abc/ui-kit",
+  "version": "1.0.0",
+  "description": "A UI Kit that supports web and react-native",
+  "exports": {
+    "web": {
+      "types": "./dist/web/index.d.ts",
+      "default": "./dist/web/index.ts"
+    },
+    "native": {
+      "types": "./dist/native/index.d.ts",
+      "default": "./dist/native/index.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc -b tsconfig.web.json tsconfig.native.json",
+    "env:web": "cp tsconfig.web.json tsconfig.json",
+    "env:native": "cp tsconfig.native.json tsconfig.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@types/react": "^17.0.53",
+    "@types/react-native": "^0.66.27",
+    "classnames": "^2.3.2",
+    "react": "^17.0.2",
+    "react-native": "^0.66.5",
+    "typescript": "^4.9.5"
+  }
+}

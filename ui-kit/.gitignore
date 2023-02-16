@@ -1,0 +1,8 @@
+# Copy of web or native config
+tsconfig.json
+
+# Dependencies
+node_modules/
+
+# Build files
+dist/
