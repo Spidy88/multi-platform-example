@@ -1,18 +1,19 @@
 {
-  "name": "@abc/app",
+  "name": "@abc/ui-kit-v1",
   "version": "1.0.0",
-  "description": "A sample multi-platform application",
-  "main": "index.js",
+  "description": "A UI Kit for the web",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
+    "build": "tsc --project tsconfig.json",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "UNLICENSED",
   "devDependencies": {
-    "@abc/ui-kit": "file:../ui-kit",
     "@types/react": "^17.0.53",
-    "@types/react-native": "^0.66.27",
+    "classnames": "^2.3.2",
     "react": "^17.0.2",
-    "react-native": "^0.66.5"
+    "typescript": "^4.9.5"
   }
 }

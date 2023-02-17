@@ -7,7 +7,7 @@ import {
     ButtonVariant,
     FontSize,
     FontWeight
-} from '@abc/ui-kit';
+} from '@abc/ui-kit-v2/web';
 
 export function MainPage() {
     return (

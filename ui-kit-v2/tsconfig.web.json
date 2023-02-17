@@ -3,7 +3,7 @@
         "src/**/*"
     ],
     "exclude": [
-        "src/**/*.web.*",
+        "src/**/*.native.*",
         "__tests__",
         "node_modules"
     ],
@@ -11,7 +11,7 @@
     "compilerOptions": {
         "allowJs": true,
         "allowSyntheticDefaultImports": true,
-        "baseUrl": "./",
+        "baseUrl": ".",
         "declaration": true,
         "esModuleInterop": true,
         "forceConsistentCasingInFileNames": true,
@@ -24,14 +24,14 @@
         "module": "ESNext",
         "moduleResolution": "nodenext",
         "moduleSuffixes": [
-            ".native",
+            ".web",
             ""
         ],
         "noImplicitAny": true,
         "noImplicitReturns": true,
         "resolveJsonModule": true,
-        "rootDir": "src",
-        "outDir": "./dist/native",
+        "outDir": "./dist/web",
+        "preserveConstEnums": true,
         "skipLibCheck": true,
         "sourceMap": true,
         "strict": true
