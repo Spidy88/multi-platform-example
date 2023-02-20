@@ -2,15 +2,21 @@
   "name": "@abc/ui-kit-v2",
   "version": "1.0.0",
   "description": "A UI Kit that supports web and react-native",
-  "main": "./dist/web/index.js",
-  "types": "./dist/web/index.d.ts",
+  "type": "module",
+  "main": "./dist/native/index.js",
+  "types": "./dist/native/index.d.ts",
   "exports": {
-    "web": {
+    "./": {
+      "types": "./dist/native/index.d.ts",
+      "default": "./dist/native/index.js",
+      "import": "./dist/native/index.js"
+    },
+    "./web": {
       "types": "./dist/web/index.d.ts",
       "default": "./dist/web/index.js",
       "import": "./dist/web/index.js"
     },
-    "native": {
+    "./native": {
       "types": "./dist/native/index.d.ts",
       "default": "./dist/native/index.js",
       "import": "./dist/native/index.js"

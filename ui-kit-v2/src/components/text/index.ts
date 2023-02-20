@@ -1,2 +1,2 @@
-export type { TextComponent, TextProps } from './interface';
-export { Text } from './text';
+export * from './interface';
+export * from './text';

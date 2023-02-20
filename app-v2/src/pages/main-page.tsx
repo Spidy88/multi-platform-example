@@ -7,7 +7,7 @@ import {
     ButtonVariant,
     FontSize,
     FontWeight
-} from '@abc/ui-kit-v2/web';
+} from '@ui-kit';
 
 export function MainPage() {
     return (
@@ -17,13 +17,17 @@ export function MainPage() {
             </Text>
 
             <Row>
-                <Button variant={ButtonVariant.Secondary}>
-                    No
-                </Button>
+                <Button
+                    variant={ButtonVariant.Secondary}
+                    text="No"
+                    onPress={() => console.log('No pressed')}
+                />
 
-                <Button variant={ButtonVariant.Primary}>
-                    Yes
-                </Button>
+                <Button
+                    variant={ButtonVariant.Primary}
+                    text="Yes"
+                    onPress={() => console.log('Yes pressed')}
+                />
             </Row>
         </Col>
     )

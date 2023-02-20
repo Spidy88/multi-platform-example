@@ -1,2 +1,2 @@
-export type { RowComponent, RowProps } from './interface';
-export { Row } from './row';
+export * from './interface';
+export * from './row';

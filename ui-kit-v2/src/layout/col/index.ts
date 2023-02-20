@@ -1,2 +1,2 @@
-export type { ColComponent, ColProps } from './interface';
+export * from './interface';
 export * from './col';

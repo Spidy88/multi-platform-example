@@ -3,7 +3,7 @@
         "src/**/*"
     ],
     "exclude": [
-        "src/**/*.native.*",
+        "src/**/*.web.*",
         "__tests__",
         "node_modules"
     ],
@@ -13,7 +13,6 @@
         "allowSyntheticDefaultImports": true,
         "baseUrl": ".",
         "declaration": true,
-        "declarationMap": true,
         "esModuleInterop": true,
         "forceConsistentCasingInFileNames": true,
         "isolatedModules": true,
@@ -25,13 +24,18 @@
         "module": "ESNext",
         "moduleResolution": "nodenext",
         "moduleSuffixes": [
-            ".web",
+            ".native",
             ""
         ],
         "noImplicitAny": true,
         "noImplicitReturns": true,
         "resolveJsonModule": true,
-        "outDir": "./dist/web",
+        "outDir": "./dist/native",
+        "paths": {
+            "@abc/ui-kit-v2": [
+                "@abc/ui-kit-v2/native"
+            ]
+        },
         "preserveConstEnums": true,
         "skipLibCheck": true,
         "sourceMap": true,

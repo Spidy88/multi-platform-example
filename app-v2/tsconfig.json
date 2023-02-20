@@ -21,11 +21,21 @@
             "DOM"
         ],
         "module": "ESNext",
-        "moduleResolution": "nodenext",
+        "moduleResolution": "node",
+        "moduleSuffixes": [
+            ".native",
+            ""
+        ],
         "noImplicitAny": true,
         "noImplicitReturns": true,
         "resolveJsonModule": true,
-        "outDir": "./dist",
+        "outDir": "./dist/native",
+        "paths": {
+            "@ui-kit": [
+                "src/ui-kit"
+            ]
+        },
+        "preserveConstEnums": true,
         "skipLibCheck": true,
         "sourceMap": true,
         "strict": true

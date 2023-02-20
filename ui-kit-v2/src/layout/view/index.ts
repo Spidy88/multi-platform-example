@@ -1,2 +1,2 @@
-export type { ViewComponent, ViewProps } from './interface';
-export { View } from './view';
+export * from './interface';
+export * from './view';
