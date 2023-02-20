@@ -1,2 +1,2 @@
 export * from './interface';
-export * from './text';
+export { Text } from './text';

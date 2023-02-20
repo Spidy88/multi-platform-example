@@ -4,6 +4,8 @@
   "description": "A sample multi-platform application",
   "main": "index.js",
   "scripts": {
+    "env:web": "cp tsconfig.web.json tsconfig.json",
+    "env:native": "cp tsconfig.native.json tsconfig.json",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

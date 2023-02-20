@@ -22,7 +22,7 @@
             "DOM"
         ],
         "module": "ESNext",
-        "moduleResolution": "nodenext",
+        "moduleResolution": "node",
         "moduleSuffixes": [
             ".native",
             ""
@@ -32,8 +32,8 @@
         "resolveJsonModule": true,
         "outDir": "./dist/native",
         "paths": {
-            "@abc/ui-kit-v2": [
-                "@abc/ui-kit-v2/native"
+            "@ui-kit": [
+                "src/ui-kit"
             ]
         },
         "preserveConstEnums": true,

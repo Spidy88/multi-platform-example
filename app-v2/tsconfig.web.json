@@ -13,7 +13,6 @@
         "allowSyntheticDefaultImports": true,
         "baseUrl": ".",
         "declaration": true,
-        "declarationMap": true,
         "esModuleInterop": true,
         "forceConsistentCasingInFileNames": true,
         "isolatedModules": true,
@@ -23,7 +22,7 @@
             "DOM"
         ],
         "module": "ESNext",
-        "moduleResolution": "nodenext",
+        "moduleResolution": "node",
         "moduleSuffixes": [
             ".web",
             ""
@@ -32,6 +31,11 @@
         "noImplicitReturns": true,
         "resolveJsonModule": true,
         "outDir": "./dist/web",
+        "paths": {
+            "@ui-kit": [
+                "src/ui-kit"
+            ]
+        },
         "preserveConstEnums": true,
         "skipLibCheck": true,
         "sourceMap": true,

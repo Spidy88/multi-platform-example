@@ -1,2 +1,2 @@
 export * from './interface';
-export * from './view';
+export { View }  from './view';

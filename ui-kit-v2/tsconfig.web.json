@@ -23,7 +23,7 @@
             "DOM"
         ],
         "module": "ESNext",
-        "moduleResolution": "nodenext",
+        "moduleResolution": "node",
         "moduleSuffixes": [
             ".web",
             ""

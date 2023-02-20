@@ -1,2 +1,2 @@
 export * from './interface';
-export * from './row';
+export { Row } from './row';
