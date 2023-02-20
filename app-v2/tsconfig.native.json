@@ -33,7 +33,7 @@
         "outDir": "./dist/native",
         "paths": {
             "@ui-kit": [
-                "src/ui-kit"
+                "node_modules/@abc/ui-kit-v2/dist/native"
             ]
         },
         "preserveConstEnums": true,

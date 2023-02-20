@@ -33,7 +33,7 @@
         "outDir": "./dist/web",
         "paths": {
             "@ui-kit": [
-                "src/ui-kit"
+                "node_modules/@abc/ui-kit-v2/dist/web"
             ]
         },
         "preserveConstEnums": true,
