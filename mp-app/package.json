@@ -1,0 +1,20 @@
+{
+  "name": "@abc/app-v2",
+  "version": "1.0.0",
+  "description": "A sample multi-platform application",
+  "main": "index.js",
+  "scripts": {
+    "env:web": "cp tsconfig.web.json tsconfig.json",
+    "env:native": "cp tsconfig.native.json tsconfig.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@abc/ui-kit": "file:../ui-kit",
+    "@types/node": "^18.14.0",
+    "@types/react": "^17.0.53",
+    "react": "^17.0.2",
+    "typescript": "^4.9.5"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "name": "@abc/ui-kit",
+  "version": "1.0.0",
+  "description": "A UI Kit that supports web and react-native",
+  "type": "module",
+  "main": "./dist/native/index.js",
+  "types": "./dist/native/index.d.ts",
+  "exports": {
+    "./web": {
+      "types": "./dist/web/index.d.ts",
+      "default": "./dist/web/index.js",
+      "import": "./dist/web/index.js"
+    },
+    "./native": {
+      "types": "./dist/native/index.d.ts",
+      "default": "./dist/native/index.js",
+      "import": "./dist/native/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -b tsconfig.web.json tsconfig.native.json",
+    "env:web": "cp tsconfig.web.json tsconfig.json",
+    "env:native": "cp tsconfig.native.json tsconfig.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@babel/cli": "^7.21.0",
+    "@babel/core": "^7.21.0",
+    "@babel/preset-react": "^7.18.6",
+    "@babel/preset-typescript": "^7.21.0",
+    "@types/react": "^17.0.53",
+    "@types/react-native": "^0.66.27",
+    "babel-plugin-module-resolver": "^5.0.0",
+    "classnames": "^2.3.2",
+    "react": "^17.0.2",
+    "react-native": "^0.66.5",
+    "ts-transform-import-path-rewrite": "^0.3.0",
+    "typescript": "^4.9.5"
+  }
+}

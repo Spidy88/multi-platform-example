@@ -1,0 +1,39 @@
+{
+    "include": [
+        "src/**/*"
+    ],
+    "exclude": [
+        "src/**/*.web.*",
+        "__tests__",
+        "node_modules"
+    ],
+    "compileOnSave": true,
+    "compilerOptions": {
+        "allowJs": true,
+        "allowSyntheticDefaultImports": true,
+        "baseUrl": ".",
+        "declaration": true,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "isolatedModules": true,
+        "jsx": "react",
+        "lib": [
+            "ES7",
+            "DOM"
+        ],
+        "module": "ESNext",
+        "moduleResolution": "node",
+        "moduleSuffixes": [
+            ".native",
+            ""
+        ],
+        "noImplicitAny": true,
+        "noImplicitReturns": true,
+        "resolveJsonModule": true,
+        "outDir": "./dist/native",
+        "preserveConstEnums": true,
+        "skipLibCheck": true,
+        "sourceMap": true,
+        "strict": true
+    }
+}
