@@ -3,6 +3,7 @@
         "src/**/*"
     ],
     "exclude": [
+        "src/**/*.native.*",
         "__tests__",
         "node_modules"
     ],
@@ -23,16 +24,16 @@
         "module": "ESNext",
         "moduleResolution": "node",
         "moduleSuffixes": [
-            ".native",
+            ".web",
             ""
         ],
         "noImplicitAny": true,
         "noImplicitReturns": true,
         "resolveJsonModule": true,
-        "outDir": "./dist/native",
+        "outDir": "./dist/web",
         "paths": {
             "@ui-kit": [
-                "node_modules/@abc/ui-kit/dist/native"
+                "node_modules/@abc/ui-kit/dist/web"
             ]
         },
         "preserveConstEnums": true,
