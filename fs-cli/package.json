@@ -1,0 +1,26 @@
+{
+  "name": "fs-cli",
+  "version": "1.0.0",
+  "description": "A cli for quick file manipulation",
+  "bin": {
+    "fs-cli": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fs-extra": "^11.1.0"
+  },
+  "files": [
+    "dist/index.js"
+  ],
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.1",
+    "@types/yargs": "^17.0.22",
+    "typescript": "^4.9.5",
+    "yargs": "^17.7.1"
+  }
+}
