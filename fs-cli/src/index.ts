@@ -5,8 +5,16 @@ import yargs from 'yargs';
 
 yargs
     .scriptName('fs-cli')
-    .command('clean-ext', (y) => {
-
-    }, (args) => {
-
-    })
+    .command(
+        'clean-ext <path>',
+        'Clean filenames to not have nested extensions',
+        (y) => {
+            return y.demand('path');
+        },
+        (args) => {
+            console.log('Cleaning path: ', args.path);
+            fs.ftruncate
+        }
+    )
+    .help()
+    .argv;

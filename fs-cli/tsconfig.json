@@ -19,7 +19,7 @@
         "lib": [
             "ES7",
         ],
-        "module": "ESNext",
+        "module": "Node16",
         "moduleResolution": "node",
         "noImplicitAny": true,
         "noImplicitReturns": true,
