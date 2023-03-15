@@ -36,6 +36,15 @@
                 "node_modules/@abc/ui-kit/dist/native"
             ]
         },
+        "plugins": [
+            {
+                "transform": "typescript-transform-paths"
+            },
+            {
+                "transform": "typescript-transform-paths",
+                "afterDeclarations": true
+            }
+        ],
         "preserveConstEnums": true,
         "skipLibCheck": true,
         "sourceMap": true,

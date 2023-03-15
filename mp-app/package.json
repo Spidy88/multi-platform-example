@@ -1,9 +1,25 @@
 {
-  "name": "@abc/app-v2",
+  "name": "@abc/app",
   "version": "1.0.0",
   "description": "A sample multi-platform application",
-  "main": "index.js",
+  "type": "module",
+  "main": "./dist/native/index.js",
+  "types": "./dist/native/index.d.ts",
+  "exports": {
+    "./web": {
+      "types": "./dist/web/index.d.ts",
+      "default": "./dist/web/index.js",
+      "import": "./dist/web/index.js"
+    },
+    "./native": {
+      "types": "./dist/native/index.d.ts",
+      "default": "./dist/native/index.js",
+      "import": "./dist/native/index.js"
+    }
+  },
   "scripts": {
+    "build": "ttsc -b tsconfig.web.json tsconfig.native.json",
+    "postBuild": "fs-cli clean-ext dist",
     "env:web": "cp tsconfig.web.json tsconfig.json",
     "env:native": "cp tsconfig.native.json tsconfig.json",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -14,7 +30,12 @@
     "@abc/ui-kit": "file:../ui-kit",
     "@types/node": "^18.14.0",
     "@types/react": "^17.0.53",
+    "fs-cli": "file:../fs-cli",
     "react": "^17.0.2",
-    "typescript": "^4.9.5"
+    "typescript": "^4.9.5",
+    "typescript-transform-paths": "^3.4.6"
+  },
+  "dependencies": {
+    "ttypescript": "^1.5.15"
   }
 }

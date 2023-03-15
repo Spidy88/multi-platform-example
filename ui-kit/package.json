@@ -19,6 +19,7 @@
   },
   "scripts": {
     "build": "tsc -b tsconfig.web.json tsconfig.native.json",
+    "postBuild": "fs-cli clean-ext dist",
     "env:web": "cp tsconfig.web.json tsconfig.json",
     "env:native": "cp tsconfig.native.json tsconfig.json",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -38,7 +39,8 @@
     "react-native": "^0.66.5",
     "ts-transform-import-path-rewrite": "^0.3.0",
     "ttypescript": "^1.5.15",
-    "typescript": "^4.9.5"
+    "typescript": "^4.9.5",
+    "typescript-transform-paths": "^3.4.6"
   },
   "dependencies": {
     "fs-cli": "file:../fs-cli"
