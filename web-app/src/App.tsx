@@ -1,6 +1,7 @@
 import React from 'react';
-import { Pages } from '@abc/app/dist/web';
 import './App.css';
+
+const { Pages } = require('@abc/app/web');
 
 function App() {
   return (

@@ -21,7 +21,7 @@
             "ES7",
             "DOM"
         ],
-        "module": "ESNext",
+        "module": "CommonJS",
         "moduleResolution": "node",
         "moduleSuffixes": [
             ".web",
@@ -48,6 +48,7 @@
         "preserveConstEnums": true,
         "skipLibCheck": true,
         "sourceMap": true,
-        "strict": true
+        "strict": true,
+        "target": "ES5"
     }
 }

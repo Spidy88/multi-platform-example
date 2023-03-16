@@ -21,7 +21,7 @@
             "ES7",
             "DOM"
         ],
-        "module": "ESNext",
+        "module": "CommonJS",
         "moduleResolution": "node",
         "moduleSuffixes": [
             ".native",

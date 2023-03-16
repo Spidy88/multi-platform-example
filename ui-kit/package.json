@@ -8,13 +8,11 @@
   "exports": {
     "./web": {
       "types": "./dist/web/index.d.ts",
-      "default": "./dist/web/index.js",
-      "import": "./dist/web/index.js"
+      "require": "./dist/web/index.js"
     },
     "./native": {
       "types": "./dist/native/index.d.ts",
-      "default": "./dist/native/index.js",
-      "import": "./dist/native/index.js"
+      "require": "./dist/native/index.js"
     }
   },
   "scripts": {

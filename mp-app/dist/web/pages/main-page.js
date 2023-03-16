@@ -1,10 +1,17 @@
-import React from 'react';
-import { Col, Row, Text, Button, ButtonVariant, FontSize, FontWeight } from "../../../node_modules/@abc/ui-kit/dist/web";
-export function MainPage() {
-    return (React.createElement(Col, null,
-        React.createElement(Text, { fontSize: FontSize.T3, fontWeight: FontWeight.Bold }, "Hello, World!"),
-        React.createElement(Row, null,
-            React.createElement(Button, { variant: ButtonVariant.Secondary, text: "No", onPress: function () { return console.log('No pressed'); } }),
-            React.createElement(Button, { variant: ButtonVariant.Primary, text: "Yes", onPress: function () { return console.log('Yes pressed'); } }))));
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.MainPage = void 0;
+var react_1 = __importDefault(require("react"));
+var _ui_kit_1 = require("../../../../ui-kit/dist/web");
+function MainPage() {
+    return (react_1.default.createElement(_ui_kit_1.Col, null,
+        react_1.default.createElement(_ui_kit_1.Text, { fontSize: _ui_kit_1.FontSize.T3, fontWeight: _ui_kit_1.FontWeight.Bold }, "Hello, World!"),
+        react_1.default.createElement(_ui_kit_1.Row, null,
+            react_1.default.createElement(_ui_kit_1.Button, { variant: _ui_kit_1.ButtonVariant.Secondary, text: "No", onPress: function () { return console.log('No pressed'); } }),
+            react_1.default.createElement(_ui_kit_1.Button, { variant: _ui_kit_1.ButtonVariant.Primary, text: "Yes", onPress: function () { return console.log('Yes pressed'); } }))));
 }
+exports.MainPage = MainPage;
 //# sourceMappingURL=main-page.js.map
